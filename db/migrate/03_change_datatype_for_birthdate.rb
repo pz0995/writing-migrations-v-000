@@ -1,6 +1,4 @@
 class ChangeBirthdate < ActiveRecord::Migration[5.1]
-  def change
-      change_column :students do |t|
-        t.datetime :birthdate
+  def change(:students, :students, :datetime)
   end
 end
